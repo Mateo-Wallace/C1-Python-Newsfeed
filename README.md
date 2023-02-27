@@ -11,4 +11,4 @@ Social Media site built using python
 
 ## Tech Used
 
-Python, MySQL, SQLAlchemy, bcrypt cryptography, 
+Python, MySQL, SQLAlchemy, bcrypt cryptography, jinja, flask, 
