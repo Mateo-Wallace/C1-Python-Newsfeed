@@ -6,3 +6,9 @@ Social Media site built using python
 - Virtual Environment
     - Start: `.\venv\Scripts\activate`
     - Stop: `deactivate`
+- Run Seeds
+    - `python seeds.py`
+
+## Tech Used
+
+Python, MySQL, SQLAlchemy, bcrypt cryptography, 
