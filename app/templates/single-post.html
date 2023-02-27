@@ -1,9 +1,5 @@
-{% extends "layout/main.html" %}
-
-{% block body %}
-{% include "partials/post-info.html" %}
-
-{% if loggedIn == True %}
+{% extends "layout/main.html" %} {% block body %} {% include
+"partials/post-info.html" %} {% if loggedIn == True %}
 <form class="comment-form">
   <div>
     <textarea name="comment-body"></textarea>
@@ -14,15 +10,8 @@
     <button type="button" class="upvote-btn">upvote</button>
   </div>
 </form>
-{% endif %}
-
-{% with comments=post.comments %}
-  {% include "partials/comments.html" %}
-{% endwith %}
-
-{% if loggedIn == True %}
+{% endif %} {% with comments=post.comments %} {% include
+"partials/comments.html" %} {% endwith %} {% if loggedIn == True %}
 <script src="/javascript/comment.js"></script>
 <script src="/javascript/upvote.js"></script>
-{% endif %}
-
-{% endblock %}
+{% endif %} {% endblock %}
