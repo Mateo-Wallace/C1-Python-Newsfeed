@@ -33,13 +33,38 @@ While building this project I learned to:
 
 ## Usage
 
-Navigate to [c1-python-newsfeed.herokuapp.com/](https://c1-python-newsfeed.herokuapp.com/)
+Navigate to [c1-python-newsfeed.herokuapp.com/](https://c1-python-newsfeed.herokuapp.com/) in order to see the site. You will be presented with the homepage that displays all users posts, it should look something like this:
+
+![example of deployed site](./app/utils/assets/deployed.png)
+
+The site will display the title, creator, points, and amount of comments a post has. By clicking on the title of the post you will be directed to the news article. By clicking on the comments you will be directed to the singular post and all of its comments.
+
+In order to make a post you must either signup or login, you can do this by clicking the login button on the top right. 
+
+Once you are logged in if you select your dashboard in the top right that is where you will be able to make a post. Also while logged in you can view other peoples posts and comment or upvote on them.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Installation
 
-PLACEHOLDER
+If you would like to download the project locally:
+
+1. Fork the Project
+1. Clone the Repo to your machine
+1. Rename the `.env.example` file to just `.env`
+1. Adjust the `DB_URL` variable so that where `mysql+pymysql://root:<password>@...` says `<password>` is replaced with your local mysql password. For example `mysql+pymysql://root:mypassword123@...`
+1. Open your terminal, preferablly `powershell` as `git bash` will not work. Begin your virtual environment by in the command line running `python -m venv venv`
+    >**NOTE**
+    >
+    >In order to activate your virtual environment run `.\venv\Scripts\activate` and to deactivate run `deactivate`. 
+    >
+    >This is best practice when working with the application so you do not download any packages globally to your computer.
+1. Download the Python requirements for your project by running `pip install -r requirements.txt`
+1. To begin the server run `python -m flask run`
+1. To view the website navigate in your browser to `http://127.0.0.1:5000/`
+    >**NOTE**
+    >
+    >Upon first viewing your version of the website their will be no data presented. Should you wish to have data pre filled run `python seeds.py` in order to seed data such as users, posts, comments, and votes.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
